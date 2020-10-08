@@ -1,0 +1,60 @@
+
+------------------------------------------------------------
+imported C:\dev\test\a\conftest.py
+spec: ModuleSpec(name='a.conftest', loader=<_frozen_importlib_external.SourceFileLoader object at 0x00000232EB844850>, origin='C:\\dev\\test\\a\\conftest.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\a\b\conftest.py
+spec: ModuleSpec(name='a.b.conftest', loader=<_frozen_importlib_external.SourceFileLoader object at 0x00000232EB8632E0>, origin='C:\\dev\\test\\a\\b\\conftest.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\b\conftest.py
+spec: ModuleSpec(name='b.conftest', loader=<_frozen_importlib_external.SourceFileLoader object at 0x00000232EDA99AF0>, origin='C:\\dev\\test\\b\\conftest.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\a\test_same.py
+spec: ModuleSpec(name='a.test_same', loader=<_frozen_importlib_external.SourceFileLoader object at 0x00000232EDA99D00>, origin='C:\\dev\\test\\a\\test_same.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\a\b\test_same.py
+spec: ModuleSpec(name='a.b.test_same', loader=<_frozen_importlib_external.SourceFileLoader object at 0x00000232EDA99DF0>, origin='C:\\dev\\test\\a\\b\\test_same.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\b\test_same.py
+spec: ModuleSpec(name='b.test_same', loader=<_frozen_importlib_external.SourceFileLoader object at 0x00000232EDA99F10>, origin='C:\\dev\\test\\b\\test_same.py')
+
+
+a\test_same.py '\n'
+{'a.conftest': <module 'a.conftest' from 'C:\\dev\\test\\a\\conftest.py'>,
+ 'a.b.conftest': <module 'a.b.conftest' from 'C:\\dev\\test\\a\\b\\conftest.py'>,
+ 'b.conftest': <module 'b.conftest' from 'C:\\dev\\test\\b\\conftest.py'>,
+ 'a.test_same': <module 'a.test_same' from 'C:\\dev\\test\\a\\test_same.py'>,
+ 'a.b.test_same': <module 'a.b.test_same' from 'C:\\dev\\test\\a\\b\\test_same.py'>,
+ 'b.test_same': <module 'b.test_same' from 'C:\\dev\\test\\b\\test_same.py'>}
+.
+a\b\test_same.py '\n'
+{'a.conftest': <module 'a.conftest' from 'C:\\dev\\test\\a\\conftest.py'>,
+ 'a.b.conftest': <module 'a.b.conftest' from 'C:\\dev\\test\\a\\b\\conftest.py'>,
+ 'b.conftest': <module 'b.conftest' from 'C:\\dev\\test\\b\\conftest.py'>,
+ 'a.test_same': <module 'a.test_same' from 'C:\\dev\\test\\a\\test_same.py'>,
+ 'a.b.test_same': <module 'a.b.test_same' from 'C:\\dev\\test\\a\\b\\test_same.py'>,
+ 'b.test_same': <module 'b.test_same' from 'C:\\dev\\test\\b\\test_same.py'>}
+.
+b\test_same.py '\n'
+{'a.conftest': <module 'a.conftest' from 'C:\\dev\\test\\a\\conftest.py'>,
+ 'a.b.conftest': <module 'a.b.conftest' from 'C:\\dev\\test\\a\\b\\conftest.py'>,
+ 'b.conftest': <module 'b.conftest' from 'C:\\dev\\test\\b\\conftest.py'>,
+ 'a.test_same': <module 'a.test_same' from 'C:\\dev\\test\\a\\test_same.py'>,
+ 'a.b.test_same': <module 'a.b.test_same' from 'C:\\dev\\test\\a\\b\\test_same.py'>,
+ 'b.test_same': <module 'b.test_same' from 'C:\\dev\\test\\b\\test_same.py'>}
+.

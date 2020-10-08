@@ -1,0 +1,53 @@
+============================= test session starts =============================
+
+------------------------------------------------------------
+imported C:\dev\test\a\conftest.py
+spec: ModuleSpec(name='conftest', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x000001F67F834B50>, origin='C:\\dev\\test\\a\\conftest.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\a\b\conftest.py
+spec: ModuleSpec(name='conftest', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x000001F67F834B50>, origin='C:\\dev\\test\\a\\b\\conftest.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\b\conftest.py
+spec: ModuleSpec(name='conftest', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x000001F67F834B50>, origin='C:\\dev\\test\\b\\conftest.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\a\test_same.py
+spec: ModuleSpec(name='test_same', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x000001F67F834B50>, origin='C:\\dev\\test\\a\\test_same.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\a\b\test_same.py
+spec: ModuleSpec(name='test_same', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x000001F67F834B50>, origin='C:\\dev\\test\\a\\b\\test_same.py')
+
+
+
+------------------------------------------------------------
+imported C:\dev\test\b\test_same.py
+spec: ModuleSpec(name='test_same', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x000001F67F834B50>, origin='C:\\dev\\test\\b\\test_same.py')
+
+
+collected 3 items
+
+a\test_same.py '\n'
+{'conftest': <module 'conftest' from 'C:\\dev\\test\\b\\conftest.py'>,
+ 'test_same': <module 'test_same' from 'C:\\dev\\test\\b\\test_same.py'>}
+.
+a\b\test_same.py '\n'
+{'conftest': <module 'conftest' from 'C:\\dev\\test\\b\\conftest.py'>,
+ 'test_same': <module 'test_same' from 'C:\\dev\\test\\b\\test_same.py'>}
+.
+b\test_same.py '\n'
+{'conftest': <module 'conftest' from 'C:\\dev\\test\\b\\conftest.py'>,
+ 'test_same': <module 'test_same' from 'C:\\dev\\test\\b\\test_same.py'>}
+.
+
+============================== 3 passed in 0.03s ==============================
